@@ -52,18 +52,19 @@ main>div>div>p>input{
 
 div#seletor{
     margin: auto;
-    max-width: 460px;
+    max-width: 400px;
     width: 79vw;
-    padding: 5px;
+    padding: 5px 0px;
     display: block;
     text-align: center;
 }
 
 div#seletor>div{
     max-width: 460px;
-    width: 25vw;
+    width: 10vw;
     display: inline;
-    padding: 5px;
+    padding: 5px 0px;
+    white-space: nowrap;
 }
 
 input#botao{
