@@ -51,7 +51,7 @@ main>div>div>p>input{
 }
 
 div#seletor{
-    margin: 0px auto;
+    margin: auto;
     max-width: 460px;
     width: 79vw;
     padding: 5px;
@@ -63,9 +63,7 @@ div#seletor>div{
     max-width: 460px;
     width: 25vw;
     display: inline;
-    margin: auto;
     padding: 5px;
-
 }
 
 input#botao{
