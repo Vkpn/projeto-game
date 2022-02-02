@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo de Jogo Favorito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Qual seu estilo de jogo favorito?
+        </h1>
+    </header>
+    <main>
+        <div>
+            <div>
+                <p>Nome:<input type="text" name="txtname" id="txtname" placeholder="Seu Nome"></p>
+                <p> Ano que nasceu: <input type="number" name="txtano" id="txtano" placeholder="XXXX" min="1900"></p>
+                <P>E-mail: <input type="email" name="txtemail" id="txtemail" placeholder="seuemail@seuemail.com"></P>
+            </div>
+            <div id="seletor">
+                <div>
+                    <input type="radio" name="estilo" id="estilo" checked>
+                    <label for="pc">Pc Gamer</label>
+                </div>
+                <div>
+                    <input type="radio" name="estilo" id="estilo">
+                    <label for="vg">Video Game</label>
+                </div>
+                <div style="text-align: right;">
+                    <input type="radio" name="estilo" id="estilo">
+                    <label for="bg">Board Game</label>
+                </div>
+            </div>
+            <input id="botao" type="button" value="Verificar" onclick="ver()">
+        </div>
+
+        <div id="res">
+            
+        </div>
+
+    </main>
+    <footer>
+        <p>Site desenvolvido por <a href="https://github.com/Vkpn">Victor Okopni</a>.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

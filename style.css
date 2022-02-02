@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+body{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(32, 3, 59);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    max-width: 800px;
+    max-height: 10vh;
+    margin: auto;
+    padding: 10px;
+    display: block;
+}
+
+main{
+    background-color: rgb(241, 241, 172);
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+}
+
+main>div{
+    padding: 10px;
+    color: black;
+    width: 480px;
+    margin-top: auto;
+}
+
+main>div>div>p{
+    margin: 5px;
+}
+
+main>div>div>p>input{
+    display: block;
+    background-color: transparent;
+    width: 460px;
+    padding: 2px ;
+    text-align: left;
+    margin-top: 0px;
+}
+
+div#seletor{
+    width: 440px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+div#seletor>div{
+    width: 140px;
+    display: inline-block;
+    text-align: center;
+}
+
+input#botao{
+    border: 5px outset goldenrod;
+    border-radius: 5px;
+    width: 480px;
+    height: 110px;
+    background-color: goldenrod;
+    box-shadow: 0px 0px 0px 2px black;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input#botao:active{
+    background-color: rgb(172, 131, 27);
+    border: 5px inset goldenrod;
+    color: white;
+    transition: 0.5ms;
+}
+
+footer{
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    margin: auto;
+}
+
+footer>p{
+    margin-bottom: 0px;
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+}
+
+footer>p>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
