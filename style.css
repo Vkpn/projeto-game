@@ -55,8 +55,8 @@ div#seletor{
     max-width: 460px;
     width: 79vw;
     padding: 5px;
-    text-align: center;
     display: block;
+    text-align: center;
 }
 
 div#seletor>div{
