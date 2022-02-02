@@ -6,12 +6,13 @@ body{
     padding: 0px;
     background-color: rgb(32, 3, 59);
     color: white;
+    height: 100vh;
+    width: 100vw;
 }
 
 h1{
     text-align: center;
-    max-width: 800px;
-    max-height: 10vh;
+    max-width: 500px;
     margin: auto;
     padding: 10px;
     display: block;
@@ -19,7 +20,8 @@ h1{
 
 main{
     background-color: rgb(241, 241, 172);
-    max-width: 500px;
+    width: 500px;
+    max-width: 83vw;
     margin: auto;
     border-radius: 10px;
     box-shadow: 3px 3px 10px black;
@@ -28,46 +30,59 @@ main{
 main>div{
     padding: 10px;
     color: black;
-    width: 480px;
+    max-width: 480px;
+    width: 80vw;
     margin-top: auto;
 }
 
 main>div>div>p{
     margin: 5px;
+    display: block;
 }
 
 main>div>div>p>input{
     display: block;
     background-color: transparent;
-    width: 460px;
+    max-width: 460px;
+    width: 76vw;
     padding: 2px ;
     text-align: left;
     margin-top: 0px;
 }
 
 div#seletor{
-    width: 440px;
+    margin: 0px auto;
+    max-width: 460px;
+    width: 79vw;
     padding: 5px;
-    font-size: 20px;
     text-align: center;
 }
 
 div#seletor>div{
-    width: 140px;
-    display: inline-block;
-    text-align: center;
+    max-width: 460px;
+    width: 25vw;
+    display: inline;
+    margin: auto;
+    padding: 5px;
+
 }
 
 input#botao{
     border: 5px outset goldenrod;
     border-radius: 5px;
-    width: 480px;
+    max-width: 480px;
+    width: 79vw;
     height: 110px;
     background-color: goldenrod;
     box-shadow: 0px 0px 0px 2px black;
     font-variant: small-caps;
     font-weight: bold;
     font-size: 20px;
+    text-align: center;
+}
+
+div#res{
+    padding: 0px;
 }
 
 input#botao:active{

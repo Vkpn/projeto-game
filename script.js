@@ -23,12 +23,15 @@ function ver(){
         if (sel[0].checked) {
             game = `no Pc`
             img.setAttribute(`src`, `./imagens/pc.png`)
+            document.body.style.backgroundColor = `#335c11`
         } else if (sel[1].checked) {
             game = `Video Game`
             img.setAttribute(`src`, `./imagens/vg.png`)
+            document.body.style.backgroundColor = `#060f44`
         } else if (sel[2].checked) {
             game = `Board Games`
             img.setAttribute(`src`, `./imagens/bg.png`)
+            document.body.style.backgroundColor = `#241c06`
         }
 
         if (idade > 1) {
@@ -37,10 +40,12 @@ function ver(){
             var anomsg = `ano`
         }
 
+
         res.style.textAlign = `center`
         res.innerHTML = `<p>Olá ${nome}, vemos que você é um gamer de ${idade} ${anomsg} e gosta de jogar ${game} nas suas horas vagas.</p>`
         res.appendChild(img)
         window.alert(`Muito obrigado por visitar minha página!
 [Usuário: ${email}]`)
+        res.style.padding = `10px`
     }
 }
