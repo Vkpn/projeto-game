@@ -47,5 +47,6 @@ function ver(){
         window.alert(`Muito obrigado por visitar minha página!
 [Usuário: ${email}]`)
         res.style.padding = `10px`
+        document.getElementById(`res.final`).style.minHeight = `645px`
     }
 }
