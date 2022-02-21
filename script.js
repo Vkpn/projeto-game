@@ -23,15 +23,15 @@ function ver(){
         if (sel[0].checked) {
             game = `no Pc`
             img.setAttribute(`src`, `./imagens/pc.png`)
-            document.body.style.backgroundColor = `#335c11`
+            document.body.style.backgroundImage = `linear-gradient(to right, rgb(158, 15, 122), blue, purple)`
         } else if (sel[1].checked) {
             game = `Video Game`
             img.setAttribute(`src`, `./imagens/vg.png`)
-            document.body.style.backgroundColor = `#060f44`
+            document.body.style.backgroundImage = `linear-gradient(to right, #00c52b, #0e2f8a 33% 66%, #ff0000)`
         } else if (sel[2].checked) {
             game = `Board Games`
             img.setAttribute(`src`, `./imagens/bg.png`)
-            document.body.style.backgroundColor = `#241c06`
+            document.body.style.backgroundImage = `linear-gradient(to right, #9c7c37, #362a0e 33% 66%, #c77100)`
         }
 
         if (idade > 1) {
@@ -48,5 +48,6 @@ function ver(){
 [Usuário: ${email}]`)
         res.style.padding = `10px`
         document.getElementById(`res.final`).style.minHeight = `645px`
+        document.getElementById(`final`).style.minHeight = `800px`
     }
 }
