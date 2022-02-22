@@ -39,6 +39,7 @@ body{ /* ------------------------------------------------ Background */
 h1{ /* ------------------------------------------------ Cabeçalho */
     font-family: var(--fontBebas);
     display: flex;
+    text-align: center;
     color: white;
     font-size: 3rem;
     margin: 20px 0px;
