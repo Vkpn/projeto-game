@@ -2,121 +2,196 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-body{
-    font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root{
+    --cor1: #090446;
+    --cor2: #120887;
+    --cor3: #5F51F5;
+    --cor3hover: #534abe;
+    --cordestaque: #f5fd00;
+    --corneutra: #FEFFD6;
+
+    --fontBebas: 'Bebas Neue';
+    --fontRoboto:'Roboto Condensed';
+}
+
+*{ /* ------------------------------------------------ Configuração global */
     margin: 0px;
     padding: 0px;
-    background-color: rgb(32, 3, 59);
-    color: white;
+}
+
+body{ /* ------------------------------------------------ Background */
+    font-family: sans-serif;
+    background-color: var(--cor1);
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    min-height: 400px;
-
+    justify-content: space-between;
 }
 
-h1{
-    font-family: 'Bebas Neue', cursive;
-    text-align: center;
-    max-width: 500px;
-    margin: auto;
-    padding: 10px;
-    display: block;
-    font-size: 2.5em;
+#contsite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-main{
-    background-color: rgb(241, 241, 172);
-    width: 500px;
-    max-width: 83vw;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px black;
+h1{ /* ------------------------------------------------ Cabeçalho */
+    font-family: var(--fontBebas);
+    color: white;
+    font-size: 3rem;
+    margin: 20px 0px;
+    text-shadow: 0px 2px 9px black;
 }
 
-main>div{
-    padding: 10px;
-    color: black;
-    max-width: 480px;
-    width: 80vw;
-    margin-top: auto;
+@media (max-width: 530px) { /* ------------------------------------------------ Media do cabeçalho para telas pequenas */
+    h1{
+        font-size: 2.5rem;
+    }    
 }
 
-main>div>div>p{
-    margin: 5px;
-    display: block;
-}
-
-main>div>div>p>input{
-    display: block;
-    background-color: transparent;
-    max-width: 460px;
-    width: 76vw;
-    padding: 2px ;
-    text-align: left;
-    margin-top: 0px;
-}
-
-div#seletor{
-    margin: auto;
-    max-width: 400px;
-    width: 79vw;
-    padding: 5px 0px;
-    display: block;
-    text-align: center;
-}
-
-div#seletor>div{
-    max-width: 460px;
-    width: 10vw;
-    display: inline;
-    padding: 5px 0px;
-    white-space: nowrap;
-}
-
-input#botao{
-    border: 5px outset goldenrod;
+main{ /* ------------------------------------------------ Parte principal (amarela) */
+    background-color: var(--cordestaque);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 800px;
+    max-width: 90vw;
     border-radius: 5px;
-    max-width: 480px;
-    width: 79vw;
-    height: 110px;
-    background-color: goldenrod;
-    box-shadow: 0px 0px 0px 2px black;
-    font-variant: small-caps;
+    padding: 10px;
+    box-shadow: 0px 3px 6px 1px black;
+}
+
+#central{ /* ------------------------------------------------ Div com todos os itens */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#formulario{ /* ------------------------------------------------ Div com itens do formulário */
+    font-family: var(--fontRoboto);
     font-weight: bold;
-    font-size: 20px;
-    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
-div#res{
-    padding: 0px;
-}
-
-input#botao:active{
-    background-color: rgb(172, 131, 27);
-    border: 5px inset goldenrod;
-    color: white;
-    transition: 0.5ms;
-}
-
-footer{
-    text-align: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    margin: auto;
-}
-
-footer>p{
-    margin-bottom: 0px;
+#pnome, #pano, #pemail{ /* ------------------------------------------------ Paragrafos dos itens do formulário */
     padding: 5px;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    text-decoration: none;
+    margin: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+    text-shadow: 0px 1px 4px #414141;
+}
+
+@media (max-width: 530px) { /* ------------------------------------------------ Media paragrafos dos itens do formulário em tela pequena */
+    #pnome, #pano, #pemail{
+        margin: 0px;
+    }    
+}
+
+#txtname, #txtano, #txtemail{ /* ------------------------------------------------ Input dos itens do formulário */
+    border-radius: 5px;
+    display: flex;
+    height: 25px;
+    flex-grow: 1;
+}
+
+#seletor{ /* ------------------------------------------------ Div com itens do seletor do tipo de jogo */
+    font-family: var(--fontRoboto);
+    font-size: 1.2rem;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#selet{ /* ------------------------------------------------ Itens do seletor do tipo de jogo */
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 5px;
+    flex-grow: 1;
+    padding: 5px;
+    text-shadow: 0px 1px 4px #414141;
+}
+
+@media (max-width: 530px) { /* ------------------------------------------------ Media da Div e dos itens do seletor do tipo de jogo */
+    #seletor{
+        flex-direction: column;
+    }
+
+    #selet{
+        border: 3px inset var(--corneutra);
+        margin: 0.5px 0px;
+    } 
+}
+
+#botao{ /* ------------------------------------------------ Botão verificar */
+    height: 50px;
+    border-radius: 5px;
+    margin: 0px 30px;
+    border: 5px outset var(--cor3);
+    font-family: var(--fontRoboto);
+    font-weight: 300;
+    font-size: 1.5rem;
+    background-color: var(--cor3);
+    color: var(--corneutra);
+    text-shadow: 1px 1px 11px #030303;
+}
+
+#botao:hover{ /* ------------------------------------------------ Hover do botão verificar */
+    background-color: var(--cor3hover);
+}
+
+#botao:active{ /* ------------------------------------------------ Botão verificar ativo */
+    border: 5px inset var(--cor3);
+}
+
+@media (max-width: 530px) { /* ------------------------------------------------ Media do botão em telas pequenas */
+    #botao{
+        margin: 0px;
+    }
+}
+
+#res{
+    padding: 0px 10px;
+}
+
+#res>p{
+    margin: 10px 20px;
+    padding: 5px 0px;
+    background-color: var(--cor2);
+    color: var(--corneutra);
+    font-family: var(--fontRoboto);
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 530px) { /* ------------------------------------------------ Media do botão em telas pequenas */
+    
+    #res{
+        padding: 5px 0px;
+    }
+    
+    #res>p{
+        margin: 5px 0px;
+    }
+}
+
+footer{ /* ------------------------------------------------ Rodapé */
+    display: flex;
+    justify-content: center;
+    background-color: var(--cordestaque);
+    font-family: var(--fontBebas);
+    font-size: 1.2rem;
+    color: var(--cor1);
+    margin-top: 30px;
 }
 
 footer>p>a{
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: var(--cor3);
 }

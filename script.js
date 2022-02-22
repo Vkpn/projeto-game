@@ -40,14 +40,10 @@ function ver(){
             var anomsg = `ano`
         }
 
-
         res.style.textAlign = `center`
         res.innerHTML = `<p>Olá ${nome}, vemos que você é um gamer de ${idade} ${anomsg} e gosta de jogar ${game} nas suas horas vagas.</p>`
         res.appendChild(img)
         window.alert(`Muito obrigado por visitar minha página!
 [Usuário: ${email}]`)
-        res.style.padding = `10px`
-        document.getElementById(`res.final`).style.minHeight = `645px`
-        document.getElementById(`final`).style.minHeight = `800px`
     }
 }

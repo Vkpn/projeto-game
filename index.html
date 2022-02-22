@@ -8,42 +8,44 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="final">
-    <header>
-        <h1>
-            Qual seu estilo de jogo favorito?
-        </h1>
-    </header>
-    <main id="res.final">
-        <div>
-            <div>
-                <p>Nome:<input type="text" name="txtname" id="txtname" placeholder="Seu Nome"></p>
-                <p> Ano que nasceu: <input type="number" name="txtano" id="txtano" placeholder="XXXX" min="1900"></p>
-                <P>E-mail: <input type="email" name="txtemail" id="txtemail" placeholder="seuemail@seuemail.com"></P>
+    <div id="contsite">
+        <header>
+            <h1>
+                Qual seu estilo de jogo favorito?
+            </h1>
+        </header>
+        <main id="res.final">
+            <div id="central">
+                <div id="formulario">
+                    <p id="pnome">Nome:<input type="text" name="txtname" id="txtname" placeholder="Seu Nome"></p>
+                    <p id="pano"> Ano que nasceu: <input type="number" name="txtano" id="txtano" placeholder="XXXX" min="1900"></p>
+                    <P id="pemail">E-mail: <input type="email" name="txtemail" id="txtemail" placeholder="seuemail@seuemail.com"></P>
+                </div>
+                <div id="seletor">
+                    <div id="selet">
+                        <input type="radio" name="estilo" id="estilo" checked>
+                        <label for="pc">Pc Gamer</label>
+                    </div>
+                    <div id="selet">
+                        <input type="radio" name="estilo" id="estilo">
+                        <label for="vg">Video Game</label>
+                    </div>
+                    <div id="selet">
+                        <input type="radio" name="estilo" id="estilo">
+                        <label for="bg">Board Game</label>
+                    </div>
+                </div>
+                <input id="botao" type="button" value="Verificar" onclick="ver()">
             </div>
-            <div id="seletor">
-                <div>
-                    <input type="radio" name="estilo" id="estilo" checked>
-                    <label for="pc">Pc Gamer</label>
-                </div>
-                <div>
-                    <input type="radio" name="estilo" id="estilo">
-                    <label for="vg">Video Game</label>
-                </div>
-                <div>
-                    <input type="radio" name="estilo" id="estilo">
-                    <label for="bg">Board Game</label>
-                </div>
+            <div id="res">
             </div>
-            <input id="botao" type="button" value="Verificar" onclick="ver()">
-        </div>
-
-        <div id="res">
-            
-        </div>
-    </main>
-    <footer>
-        <p>Site desenvolvido por <a href="https://github.com/Vkpn">Victor Okopni</a>.</p>
-    </footer>
+        </main>
+    </div>
+    <div>
+        <footer>
+            <p>Site desenvolvido por <a href="https://github.com/Vkpn" target="_blank">Victor Okopni</a></p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
